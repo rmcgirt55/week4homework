@@ -59,7 +59,7 @@ $(document).ready(function() {
 				$('#yourScore').text(counter);
 		//	user's win 
 				if (counter == numberToGuess){
-				  $('#status').text('You won!!!!');
+				  $('#status').text('Good Job you Won!');
 				  wins ++;
 				  $('#win').text(wins);
 				  console.log(wins)
@@ -68,7 +68,7 @@ $(document).ready(function() {
 				  newGame();
 		//	user's losses	        
 				} else if ( counter > numberToGuess){
-					$('#status').text('You lost!');
+					$('#status').text('You Lost, Better luck next Round.!');
 					losses ++;
 					$('#loss').text(losses);
 					console.log(losses)
@@ -76,6 +76,10 @@ $(document).ready(function() {
 					newCrystals();
 					newGame();
 				}
+			
+			
+			
+			
 			});
 		}
 	
